@@ -1,0 +1,76 @@
+main{
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.35rem;
+}
+.box1{
+    text-align: center;
+    height:400px;
+    width:50%;
+    border: 2px black solid;
+    border-radius: 4px;
+
+}
+.heading{
+    margin-bottom: 50px;
+    height:40px;
+    background-color: #d4aae5;
+}
+#email, #password{
+    margin-top: 20px; margin-bottom: 20px;
+    height: 30px;
+    width:80%;
+}
+
+/* #email:hover , #password:hover{
+    border: 4px ridge #8d36b2; */
+/* } */
+.LogInBtn{
+    margin-top: 20px;
+    height: 40px;
+    width: 50%;
+    font: 1em sans-serif;
+    background-color: #c388db;
+    border-radius: 4px;
+}
+.LogInBtn:hover{
+    background-color: #d4aae5;
+}
+
+.SignUpMsg{
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.box2{
+    font-size: 20px;
+    height:13rem;
+    width:70%;
+    border:2px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e8e9;
+    border-radius:6px;
+}
+
+.box2:hover{
+    border:4.5px solid black;
+    }    
+
+.SignInSuccessfulMsg{
+        font-size:2rem ;
+        margin-bottom: 20px;
+    }    

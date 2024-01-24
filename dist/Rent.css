@@ -1,0 +1,297 @@
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signInAlertBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    height:10rem;
+    width:70%;
+    background-color: #e7e8e9;
+    border:2px solid black;
+    
+}
+
+.DetSubSucBox{
+    text-align: center;
+    height:relative;
+    font-size:2rem;
+    /* height set to relative so that all elements fit to box */
+    width:60%;
+    border: 2px black solid;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: #e7e8e9;
+}
+
+.SucBoxIcon{
+    margin-top:1rem ;
+    
+}
+.SucBoxMsg{
+    margin-bottom: 1rem;
+}
+
+.RentalItemsFormBox{
+    margin-top: 1.5rem;
+    text-align: center;
+    height:relative;
+    /* height set to relative so that all elements fit to box */
+    width:60%;
+    border: 2px black solid;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.RentalItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.35rem;
+    border-radius:4px;
+   
+}
+
+.heading{
+    margin-bottom: 50px;
+    height:40px;
+    background-color: #d4aae5;
+}
+
+#name , #info , #photo{
+margin-top: 20px; margin-bottom: 40px;
+height: 30px;
+width:80%;
+font-size: 1rem;
+}
+.RemItemSucBox{
+    text-align: center;
+    height:relative;
+    font-size:2rem;
+    /* height set to relative so that all elements fit to box */
+    width:60%;
+    border: 2px black solid;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: #e7e8e9;
+    z-index: 2;
+}
+
+#Itemimg{
+    width:85%;
+    height:300px;
+}
+.upload{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 25%;
+    font: 1em sans-serif;
+    background-color: #c388db;
+    border-radius: 4px;
+}
+.upload:hover{
+    background-color: #d4aae5;
+}
+
+.uploadImgMsg{
+    margin-top: 1rem;
+    margin-bottom:1rem;
+
+}
+
+.RentalItemsBtn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 50%;
+    font: 1em sans-serif;
+    background-color: #c388db;
+    border-radius: 4px;
+}
+
+.RentalItemsBtn:hover{
+    background-color: #d4aae5;
+}
+
+.RentalItemList{
+    display: flex;
+    width:relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    text-align: center;
+    font:1.5rem sans-serif;
+    z-index: 1;
+    
+}
+.ShowListBtn{
+    background-color: #c388db;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    width:relative;
+    border-radius: 4px;
+}
+.ShowListBtn:hover{
+    background-color: #d4aae5;  
+}
+
+.HideListBtn{
+    background-color: #c388db;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    width:relative; 
+}
+.HideListBtn:hover{
+    background-color: #d4aae5;  
+}
+.ListBox{
+    margin-top: 1rem;
+    text-align: center;
+    height:relative;
+    
+    margin-bottom: 2rem;
+    /* height set to relative so that all elements fit to box */
+    /* width:80%; */
+    width:100%;
+    display: flex;
+    flex-direction: column; 
+     align-items:center; 
+     justify-content: center; 
+    
+    /* border: 2px black solid;
+    border-radius: 4px; */
+    /* display: flex;
+    flex-direction: column; */
+    /* background-color: #eff0ee; */
+}
+
+.List{
+   
+    width:50%;
+    font-size: 1.5rem;
+    text-align: left;
+   background-color: #f999fa;
+}
+.Availability{
+  width:70%;
+  height: 1.5rem;
+  font-size: 1.5rem;
+    background-color: #f665f7;
+}
+/* .Remove{
+    height:1rem;
+    width:35%;
+    font-size:1.5rem;
+} */
+.DelBtn{
+    font-size:1.5rem; 
+    width:100%;  
+    background-color: #f115f3;
+   
+}
+.DelBtn:hover{
+    background-color:#f778f8 ;
+}
+
+.RentalItemList{
+    margin-top: 1.5rem;
+    text-align: center;
+    height:relative;
+    /* height set to relative so that all elements fit to box */
+    width:60%;
+    border: 2px black solid;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+.tableBody{
+    width:90%;
+   
+    /* background-color: blue; */
+    /* display: flex;
+    flex-direction: column; */
+}
+.tableRow{
+    width:100%;
+   
+    /* background-color: red; */
+}
+
+/* below css is for toggle switch  */
+.toggleContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:red;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: green;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .toggleText{
+    padding-left: 1rem;
+  }

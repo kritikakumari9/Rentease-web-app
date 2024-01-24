@@ -1,0 +1,255 @@
+main{
+    min-height: 100vh;
+    text-align: center;
+   
+    /* width:100vw;
+    
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+   
+} 
+
+
+.signInAlertBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    height:100vh;
+    width:100%;
+    /* background-color: #e7e8e9; */
+    /* border:2px solid black; */
+    
+}
+.signInAlertMssgBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    height:10rem;
+    width:70%;
+    background-color: #e7e8e9;
+    border:2px solid black;
+}
+
+.NoItemFndBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    height:100vh;
+    width:100%;
+    margin-top:2rem;
+}
+.NoItemFndBoxMssg{
+    text-align: center;
+    height:10rem;
+    font-size:2rem;
+    /* height set to relative so that all elements fit to box */
+    width:70%;
+    border: 2px black solid;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: #e7e8e9;
+}
+
+.NoItemFndIcon{
+    margin-top: 1rem;
+    margin-bottom:0.7rem;
+}
+.NoItemFndMsg{
+    margin-bottom: 1rem;
+}
+
+
+.flex-container{
+
+
+        margin-top: 1.5rem;
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap:wrap;
+        align-items: center;
+        /* Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line
+        by wrap means that elemetn will come to next line if they cant fit on single line
+        no wrap is by default */
+        justify-content: space-evenly;
+        /* background-color: #e2e7e6; */
+   overflow: hidden;
+}
+
+.Box{
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
+    border: 2px solid black;
+    background-color: #fde2fe;
+    /* height:20rem; */
+    height:100%;
+    width:40%;
+    /* background-color: red; */
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    border-radius:1rem;
+}
+.Box:hover{
+    /* below line adds shadow to all 4 sides of box */
+    box-shadow: 0 0 0.7rem 0.7rem  #716e91;
+   /* we have not set height of flex container therefore by default its height will be
+   dependent on hrifh   */
+   /* because of below code when we hover over the image its height is increased as it 
+   now also displays the information of photo and its owner  */
+    height:100%;
+    width:42%;
+   
+}
+/* .box1{
+    height:400px;
+} */
+.RentalItems-section1{
+    display: flex;
+    margin-top: 2rem;
+    position:relative;
+    overflow: hidden;
+    /* written above to prevent horizontal scrollbar that was coming
+    due to one flexbox having 8 images in slideshow animation */
+    /* justify-content: space-evenly; */
+    background-color: #eff0ee;
+     
+}
+
+.RentalItems-section2{
+    display: flex;
+    margin-top: 2rem;
+    position:relative;
+    overflow: hidden;
+    /* written above to prevent horizontal scrollbar that was coming
+    due to one flexbox having 8 images in slideshow animation */
+    justify-content: space-evenly;
+    background-color: #eff0ee;
+     
+}
+
+.box{
+    
+    border: 2px solid #860395;
+    height:400px;
+    width:23%;
+    background-color: white;
+    margin-top: 15px;
+    min-width: 23%;
+    /* set min-width:23% to prevent flex items from overflowing and so that only 4 elements are shown at a time */
+    /* due to this flex item will not be able to shrink from its min-width therefore no overflow */
+    margin-left: 20px;
+    margin-right:20px;
+    text-align: center;
+
+    animation-name: slideshow;
+    animation-duration:15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+   
+    
+}
+.box:hover{
+    border:5px groove #c804df;
+}
+
+
+
+.box-img{
+    height: 275px;
+   
+    background-size: 100% 100%;
+    padding: 20px 0px 15px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+@keyframes slideshow {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform:translate(-700%) ;
+    }
+}
+
+
+
+/* below css is for star rating that will be visible just below the image */
+
+.Totalrating{
+    font-size: 1rem;
+    cursor: pointer;
+    color:#ccc;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+}
+.starYellow{
+    font-weight: 900;
+    color:#f8ce0b; 
+}
+
+.PeopleRated{
+    margin-right:1rem;
+    color:black;
+}
+.numberRating{
+    margin-left: 1rem;
+    color:black;
+}
+
+/* below css is for star rating i.e. is at below at which users give their rating */
+.rating {
+    font-size: 1rem;
+    cursor: pointer;
+    color:#ccc;
+    /* margin-top: 1rem; */
+    margin-bottom: 1.5rem;
+    /* margin-top: 1.5rem; */
+}
+.starSelected{
+    font-weight: 900;
+    color:#f8ce0b;
+}
+#selectedRating{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.RatingBtn{
+    margin-left: 0.5rem;
+    background-color:#b42bd9;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+
+}
+.RatingBtn:hover{
+    background-color: #891ea6;
+}
+
+.subRatMssg{
+    color:black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ font-weight: 700;
+}
+.sucRatMssg{
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  font-weight: 800;
+}

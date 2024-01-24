@@ -1,0 +1,277 @@
+/* * means all elements(a universal selector) so we set all elements to 
+have zero margins initially */
+*{
+    
+    margin:0;
+    font-family: Arial;
+    border:border-box;
+    /* border box basically incluses border within the element described
+    heihgt and width. Usually when we define border size and type its included outside
+    element defined height and width but here its included within it therefore if we increase
+     border size then in this case content size will decrease. its good practice to define border 
+     this way for maintaining clear record of space
+    */
+}
+
+
+nav{
+    /* using sticky with semantic tag i.e. nav works but not with 
+    class selector  i.e.  .navbar   */
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    /* written z-index to prevent my slideshow animation in going over
+    the sticky nav-bar */
+}
+.navbar{
+    height:60px;
+    background-color:#680274 ;
+    color: white;
+    display: flex;
+    /* justify-content: space-between; */
+    /* spaces evenly the items in flex */
+    align-items: center;
+    /* above code align along center of cross axis(vertical axis in this case) */
+   
+}
+
+/* * below code is written to make the hover effect white border better 
+in the left side of nav bar which contains, here we have included logo part since its
+already shows good hover effect  */
+.nav-home, .nav-signin , .nav-contactus , .nav-signout ,.nav-rent , .nav-searchRentalItems{
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.leftnavbar{
+    display:flex;
+    height:60px;
+    width:54%;
+    justify-content: space-between;
+    align-items: center;
+      }
+
+   
+
+.centernavbar{
+    display: flex;
+    margin-left: 1rem;
+    height: 60px;
+    width:30%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rightnavbar{
+    display: flex;
+    font-size:20px;
+    height: 60px;
+    width:16%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* below code is written to make the hover effect white border better 
+in the right side of nav bar which contains three social media icons*/
+.rightnavbar div{
+    display: flex;
+    align-items: center;
+    height:55px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/* .nav-center{
+    width:60%;
+    height:60px; 
+} */
+
+
+.nav-logo{
+    height: 50px;
+    width:113px;
+}
+.logo{
+       background-image: url("/Images/Icon.png");
+        background-size: cover; 
+        /* above property important without it no background image visible
+        cover means Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges
+        can check more options in w3schools */
+    height: 50px;
+    width:100%;
+     /* giving width is important or else logo will not come */
+    /* With width: 100%;, you want the element to be as big as its parent. */
+}
+
+.border{
+    
+    border: 1.5px solid transparent;
+}
+/* if we dont write above code and just below one then we will observe that when 
+mouse curesor will come over it the icons will somewhat be moved
+but due to above code it will not happen this happens because due border:border box  which we have set for all elements at top
+therefore if border will suddenly come when we hover then content size will reduce since border will come inside element and not outside it
+therfore from before we set border with color trasnparent */
+.border:hover{
+    border:1.5px solid white;
+    border-radius: 4px;
+}
+
+.nav-signin a, .nav-signout a,.nav-rent a,.nav-searchRentalItems a, .nav-contactus a , .nav-home a, .navFacebook a , .navLinkedIn a, .navinstagram a{
+    color:white;
+    text-decoration: none;
+}
+
+.nav-search{
+    display: flex;
+    /* justify-content: space-evenly; */
+    width:100%;
+    height:40px;
+    background-color: pink;
+    border-radius: 4px;
+}
+.nav-search:hover{
+    border: #f6b5fe solid 4px;
+}
+
+
+
+
+.searchInput{
+    color:rgb(17,17,17);
+    width:90%;
+    /* by writing this we tell the compiler that except 
+    space occupied by select option currently showing All and search icon give
+    rest other space to search-input  */
+    border:none;
+    font-size: 1rem;
+    /* by doing this both all and search amazon option will look together
+    earlier they were looking apart due to border since we have set
+    border:border box for all elements therefore due to default border elements content
+    shrinks and starts looking small therefore we set any default border to none */
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    
+    outline: none;
+    /* we're telling the browser not to draw the default outline that appears when the element is focused. */
+}
+.search-icon{
+    height: 100%;
+   width:10%;
+   border: none;
+   display:flex;
+   /* to bring icon in centre  */
+   justify-content: center;
+   /* bring icon in centre horizontally */
+   align-items: center;
+   /* brings icon in centre vertically */
+   font-size:1.3rem;
+   /* above code written to increase the size of search icon  */
+   background-color: #f6b2fe;
+   border-top-right-radius: 4px;
+   border-bottom-right-radius: 4px;
+   color:black;
+}
+.searchInputForm{
+    display:flex;
+    width:100%;
+}
+
+.searchBtn{
+    height: 100%;
+    width:30%;
+    border: none;
+    display:flex;
+    /* to bring icon in centre  */
+    justify-content: center;
+    /* bring icon in centre horizontally */
+    align-items: center;
+    /* brings icon in centre vertically */
+    font-size:1.3rem;
+    /* above code written to increase the size of search icon  */
+    background-color: #f6b2fe;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color:black;
+}
+
+
+
+
+
+
+/* footer */
+footer{
+    margin-top:15px ;
+    
+}
+.foot-panel1{
+/* background-color: #63026f; */
+background-color: #860395;
+color:white;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 0.85rem;
+}
+
+
+
+
+ul a{
+    /* above line means anchor tag of ul */
+    display: block;
+    font-size: 0.85rem;
+    color:#dddddd;
+    margin-top: 10px;
+}
+ul p{
+    margin-top: 20px;
+}
+
+.foot-panel2{
+    background-color: #680274;
+    color:white;
+    border-top:0.5px solid white;
+    /* above code creates white line i.e. just the top border */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* no need to write below code its already written at top but I pasted it at down just for
+reference */
+.logo{
+    background-image: url("/Images/Icon.png");
+     background-size: cover; 
+     /* above property important without it no background image visible
+     cover means Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges
+     can check more options in w3schools */
+ height: 50px;
+ width:100px;
+
+}
+
+.foot-panel3{
+  display:flex;
+  justify-content: center;  
+  align-items: center;
+  /* background-color: #63026f;  */
+  background-color: #5a0265;
+   color: white;
+  height: 1.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.BackToTop{
+    color:white;
+    text-decoration: none;
+    font-size: 0.95rem;
+}

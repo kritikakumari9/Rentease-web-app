@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel ="stylesheet" href="/MainWebsite/NavBarAndFooter.css">
+    <link rel="icon" href="/Images/RenteaseFavicon.png" type="image/icon type">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   
+    <nav>
+        <div class="navbar">
+          <!-- for sake of convenience whatever we put in this navbar
+          we will use nav in its class name along with its function like nav-address -->
+          
+          <div class="leftnavbar">
+          <div class="nav-logo border">
+             <div class="logo"></div>
+           </div>
+   
+           <div class="nav-home border"><a href="/MainWebsite/MainPage.html">Home</a></div>
+   
+           <div class="nav-signin border">
+             <a href="SignUp.html">Sign in/Sign up</a> 
+           </div>
+
+           <div class="nav-signout border" style="display: none;">
+            <!-- i used display:none and not visibility:hidden since in visibility 
+            although sign out is not visible but still it occupies space therefore there is a gap
+            but in display:none that extra gap is not there  -->
+            <a href="logout.html">Sign out</a>  
+            </div>
+   
+            <div class="nav-rent border" >
+              <a href="/dist/Rent.html">Give on rent</a>
+            </div>
+            
+            <div class="nav-searchRentalItems border">
+              <a href="RentalItemsDisplay.html">Search items</a>
+           </div>
+
+           <div class="nav-contactus border">
+             <a href="/MainWebsite/ContactUs.html" >Contact us</a> 
+           </div>
+         </div>
+   
+           
+           <div class="centernavbar" style="visibility: hidden;">
+             <div class="nav-search " >
+              
+              <form  class="searchInputForm">
+                <input type="text" name="search-input"  placeholder="Search rental items here" class="search-input" required>
+                <!-- placeholder attribute basically tells type of input that user has to enter -->
+                <!-- it works with following input types: text, search, url, tel, email, and password. -->
+                
+                <div class="search-icon">
+                  
+                   <button class="searchBtn"  > 
+                    <i class="fa-solid fa-magnifying-glass" ></i>
+                   </button>
+                 
+                </div>
+               </form>
+    
+
+             </div>
+           </div>  
+        
+   
+           <div class="rightnavbar">
+             <div class="navFacebook border">
+               <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i> </a> </div>
+   
+             <div class="navLinkedIn border">
+               <a href="https://in.linkedin.com/" target="_blank">
+               <i class="fa-brands fa-linkedin"></i>
+             </a>
+             </div>
+   
+             <div class="navinstagram border">
+               <a href="https://www.instagram.com/" target="_blank">
+               <i class="fa-brands fa-instagram"></i>
+             </a></div>
+   
+           </div>
+          
+        
+         </div>
+   
+         
+       </nav>
+
+       <main>
+        <div class="box1">
+         <h2 class="heading"> Sign In</h2>
+      
+         <form class = 'login'>
+            <label for ='email'>Email:</label>
+            <input type ="email" name="email" id="email" required>
+            <label for ='password'>Password:</label>
+            <input type = "password" name="password" id = "password">
+            <button class='LogInBtn'> Sign In</button>
+         </form>
+        
+         <p class="SignUpMsg">Don't have an account ? <a href="SignUp.html" >Sign up here</a> </p>
+
+        </div>
+
+        <div class="box2" style="display: none;">
+          <div class="SignInSuccessfulMsg">
+            You have successfully signed in!
+          </div>
+      
+          <div class="ReturnToHomePageMsg">
+            Return to <a href="/MainWebsite/MainPage.html">Homepage</a>
+          </div>
+        </div>  
+
+      </main>
+
+      <footer>
+        <div class="foot-panel1">
+         
+         <a  class="BackToTop" href="#top"> Back To Top </a>
+        </div>
+        
+        <div class="foot-panel2">
+          <div class="logo"></div>
+        </div>
+        <div class="foot-panel3">
+           
+           <div class="copyright">
+             © Copyright Rentease. All Rights Reserved.
+           </div>
+        </div>
+     </footer>
+
+      
+     
+     <script src="bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+
+
+/* hero section */
+.hero-section{
+    display: flex;
+   align-items: end;
+   justify-content: center;
+    /* we did above since we wanted the message below the hero picture  */
+    background-image: url('/Images/hero_image3.png');
+    height:400px;
+    width:100%;
+    /* above is also default value of width  */
+    background-size:100% 100% ;
+    /* here we set the width and height of the background image in percent of the parent element. */
+    /*   cover means Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges
+        can check more options in w3schools */
+   
+}
+.hero-msg{
+    font-family: 'ranklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    color:black;
+    background-color: #eaecea;
+    justify-content: center;
+    /* places centre horizontally */
+    align-items: center;
+    /* places centre vertically */
+    height:40px;
+    font-size: 1.85rem;
+   
+    width:relative;
+    margin-bottom: 10px;
+
+}
+.auto-type{
+    font-style: italic;
+    color:#460144;
+}
+
+
+/* rental items section */
+
+.RentalItems-section{
+    display: flex;
+    position:relative;
+    overflow: hidden;
+    /* written above to prevent horizontal scrollbar that was coming
+    due to one flexbox having 8 images in slideshow animation */
+    /* justify-content: space-evenly; */
+    background-color: #eff0ee;
+     
+}
+
+.box{
+    
+    border: 2px solid #860395;
+    height:400px;
+    width:23%;
+    background-color: white;
+    margin-top: 15px;
+    min-width: 23%;
+    /* set min-width:23% to prevent flex items from overflowing and so that only 4 elements are shown at a time */
+    /* due to this flex item will not be able to shrink from its min-width therefore no overflow */
+    margin-left: 20px;
+    margin-right:20px;
+    text-align: center;
+
+    animation-name: slideshow;
+    animation-duration:15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+   
+    
+}
+.box:hover{
+    border:5px groove #c804df;
+}
+
+
+
+.box-img{
+    height: 275px;
+   
+    background-size: 100% 100%;
+    padding: 20px 0px 15px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+@keyframes slideshow {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform:translateX(-700%) ;
+    }
+}
+
+
+
+.AboutUs{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size:2rem;
+    color:#35013b;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-weight: 600;
+    text-shadow: 5px 5px #f8c6fe;
+    
+} 
+
+
+
+.AboutUsContainer{
+    margin-top:20px;
+    text-align: center;
+    display: flex;
+}
+
+.AboutUsImage{
+    width:50%;
+    /* box-shadow: 4px 3px #fce5ff; */
+    background-image: url('/Images/CollegeStationary.png');
+    background-size: cover;
+    height:234px;
+    width:472px;
+
+
+}
+
+.AboutUsContent{
+    width:60%;
+    /* border:2px solid #af03c3; */
+    font-size:1.15rem;
+    text-shadow: none;
+    color:black;
+    font-style: normal;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: normal;
+    /* animation code below */
+    animation-name: fade-inout;
+    animation-iteration-count: 1;
+    animation-duration: 20s;
+}
+
+/* implementing animation using @keyframe via animation name */
+@keyframes fade-inout{
+   0%{
+    opacity: 0;
+   } 
+100%{
+    opacity: 1;
+}
+}
+
+
